@@ -1,6 +1,6 @@
 'use strict';
 
-const userGroup = document.getElementById("users");
+const userList = document.getElementById("users");
 let counter = 0;
 
 const getProfile = () => {
@@ -64,7 +64,7 @@ const createUser = (title, firstName, lastName, image, email, address, dob, age,
 
   const index = id;
 
-  userGroup.setAttribute("style", "display:inline-block; margin:3%;")
+  userList.setAttribute("style", "display:inline-block; margin:3%;")
   nameLabel.innerText = `${title}, ${lastName}`;
   userImage.setAttribute("src", image);
   moreBtn.innerText = " Full Information";
@@ -93,7 +93,7 @@ const createUser = (title, firstName, lastName, image, email, address, dob, age,
   container.appendChild(personAge);
   container.appendChild(eAddress);
 
-  userGroup.appendChild(profileBox);
+  userList.appendChild(profileBox);
 
 }
 
